@@ -35,6 +35,7 @@ nav.find_element(By.CLASS_NAME, 'searchBarComponent__22760').click()
 sleep(2)
 nav.find_element(By.CLASS_NAME, 'input__848cd').click()
 sleep(2)
+#entra no servidor 
 nav.find_element(By.CLASS_NAME, 'input__848cd').send_keys("os preguiçosos de plantão ")
 classe = nav.find_elements(By.CLASS_NAME, 'match_a540b5')
 try:
@@ -47,6 +48,7 @@ except:
 sleep(2)
 
 nav.find_element(By.CLASS_NAME, 'link__95dc0').click()
+#roleta as cartas
 nav.find_element(By.CLASS_NAME, 'link__95dc0').send_keys('$wl', Keys.ENTER)
 elem = nav.find_elements(By.CLASS_NAME, 'grid_c7c4e6')
  
@@ -57,7 +59,7 @@ welem_metade = (welem[0][0:5])
 
 if f'{username[0:5]}' in welem_metade:
     data_wish = welem #o nome das minhas wish que esta na lista 
-#so para confirmar se e a minha consulta de wl
+#so para confirmar se a carta pertence a minha lista
 sleep(3)
 nav.find_element(By.CLASS_NAME, 'link__95dc0').send_keys('$ru', Keys.ENTER)
 
